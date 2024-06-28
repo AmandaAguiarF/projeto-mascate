@@ -1,0 +1,30 @@
+1 - npm init -y
+2 - npm i -D typescript
+3 - npm i -D tsx
+4 - npx tsc --init
+    4.1 - no tsconfig atualizar:
+        a. No inicio inserir --> "include": ["./src"],
+        b. No "compilerOptions" descomentar a linha --> "outDir": "./build",
+5 - npx gitignore node
+6 - npm i -D ts-node-dev
+7 - Ajustar o package.json em "scripts" para:
+        "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1",
+            "dev": "ts-node-dev src/index.ts",
+            "start": "node build/index.js",
+            "build": "rimraf .build && tsc"
+        }
+8 - npm i express
+9 - npm i -D @types/express
+10 - npm i cors
+11 - npm i -D @types/cors
+12 - npm i -D @types/node
+13 - npm install typeorm --save
+14 - npm install reflect-metadata --save
+15 - Importe-o para algum lugar no local global do seu aplicativo (por exemplo, em):app.ts (server.ts)
+    import "reflect-metadata"
+16 - npm install mysql2 --save
+
+comando para rodar o programa: npm run dev
+
+comando para quebrar linha altomaticamente: alt + z
